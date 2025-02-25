@@ -11,6 +11,7 @@ import (
 )
 
 func main() {
+
 	if err := realMain(); err != nil {
 		log.Fatal(err)
 	}
@@ -18,7 +19,6 @@ func main() {
 }
 
 func realMain() error {
-
 	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt)
 	defer cancel()
 

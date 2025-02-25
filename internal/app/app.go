@@ -26,7 +26,7 @@ func Run(ctx context.Context) error {
 		slog.Info("Shutting down server")
 		s.Shutdown(ctx)
 	}()
-	slog.Info("Starting server", slog.String("addr", cfg.ServerAddr))
+	slog.Info("Starting server!", slog.String("addr", cfg.ServerAddr))
 	if err := s.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 		return err
 	}
