@@ -2,10 +2,12 @@ package main
 
 import (
 	"context"
-	"go_templ_htmx/internal/app"
+
 	"log"
 	"os"
 	"os/signal"
+
+	"github.com/alexesp/Go_Templ_HTMX.git/internal/app"
 )
 
 func main() {
